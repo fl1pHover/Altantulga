@@ -1,0 +1,59 @@
+#product {
+    position: relative;
+    height: 100vh;
+    margin: 3% 0;
+    .container {
+        text-align: center;
+        .card__box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 100vh;
+            padding: 3% 0;
+            .card {
+                cursor: pointer;
+                &:hover>.front {
+                    transform: perspective(600px) rotateY(-180deg);
+                }
+                &:hover>.back {
+                    transform: perspective(600px) rotateY(0deg);
+                }
+                .front,
+                .back {
+                    width: 250px;
+                    height: 350px;
+                    border-radius: 10px;
+                    backface-visibility: hidden;
+                    position: absolute;
+                    transition: transform .4s linear;
+                    align-items: center;
+                    display: flex;
+                }
+                .front {
+                    transform: perspective(600px) rotateY(0deg);
+                    img {
+                        width: 250px;
+                        height: 350px;
+                        border-radius: 10px;
+                        box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+                    }
+                }
+                .back {
+                    background: #f1f1f1;
+                    transform: perspective(600px) rotateY(180deg);
+                    box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+                    padding: 20px;
+                    .back__content {
+                        color: black;
+                        text-align: center;
+                        width: 100%;
+                        .sub__header {
+                            text-transform: none;
+                            letter-spacing: 2px;
+                            margin-bottom: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
