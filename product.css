@@ -13,12 +13,14 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 80px;
   padding: 3% 0;
 }
 
 #product .container .card__box .card {
   position: relative;
   cursor: pointer;
+  height: 350px;
 }
 
 #product .container .card__box .card:hover > .front {

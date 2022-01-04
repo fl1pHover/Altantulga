@@ -334,11 +334,11 @@ nav .nav__content .container .nav__logo img {
   padding-right: 10%;
 }
 
-s #about {
+#about {
   margin-bottom: 50px;
 }
 
-s #about .container .about__content {
+#about .container .about__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,24 +348,24 @@ s #about .container .about__content {
   padding: 60px 0;
 }
 
-s #about .container .about__content .about__text {
+#about .container .about__content .about__text {
   width: 66.7%;
 }
 
-s #about .container .about__content .about__text .main__header {
+#about .container .about__content .about__text .main__header {
   margin-bottom: 30px;
 }
 
-s #about .container .about__content .about__text .medium__p {
+#about .container .about__content .about__text .medium__p {
   padding: 10px 0;
 }
 
-s #about .container .about__content .about__text .btn {
+#about .container .about__content .about__text .btn {
   padding-top: 10px;
 }
 
-s #about .container .about__content .about__img {
-  background: url(./img/passion.jpg);
+#about .container .about__content .about__img {
+  background: url(./img/portrait.jpg);
   background-position: center;
   width: 350px;
   height: 520px;
@@ -373,7 +373,7 @@ s #about .container .about__content .about__img {
   margin: auto;
 }
 
-s #about .container .about__content .about__img img {
+#about .container .about__content .about__img img {
   width: 100%;
 }
 
