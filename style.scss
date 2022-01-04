@@ -355,6 +355,29 @@ footer {
                     letter-spacing: .06em;
                     text-transform: uppercase;
                 }
+                .contact__info {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 100px;
+                    justify-content: space-between;
+                    margin: 1em 0;
+                    .info {
+                        display: flex;
+                        i {
+                            font-size: 25px;
+                            color: var(--var-dark);
+                            margin: auto;
+                        }
+                        .info__text {
+                            h3 {
+                                font-size: 20px;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
                 .medium__p {
                     color: var(--var-dark);
                     font-size: 15px;
