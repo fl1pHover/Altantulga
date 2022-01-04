@@ -200,7 +200,7 @@ nav {
         .main__content {
             margin: 50px 0;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             grid-column-gap: 20px;
             .main__text {
                 padding: 50px 10px;
@@ -462,7 +462,7 @@ footer {
         margin: 3% auto;
         .blog__box {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 60px;
             padding: 3% 0;
             .prof {

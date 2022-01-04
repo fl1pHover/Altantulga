@@ -8,11 +8,11 @@
 }
 #product .container .card__box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
   padding: 3% 0;
 }
 #product .container .card__box .card {
+  position: relative;
   cursor: pointer;
 }
 #product .container .card__box .card:hover > .front {
