@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira Sans+Condensed:wght@100;200;300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,13 @@
     --var-main-header: 40px;
     --var-sub-header: 20px;
     --var-big-p: 25px;
-    --var-medium-p: 16px --var-small-p: 13px
+    --var-medium-p: 16px;
+    --var-small-p: 12px;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 3000ms;
 }
 
 body {
@@ -48,7 +55,7 @@ li {
 }
 
 .sub__header {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: var(--var-sub-header);
     color: #222;
     letter-spacing: .14em;
@@ -74,18 +81,17 @@ li {
     ;
 }
 
-.medium__p {
+.small__p {
     font-size: var(--var-small-p);
     font-weight: 300;
     letter-spacing: .02em;
-    line-height: 1.7em;
     //     color: var(--var-black-gray);
     color: #949494;
     ;
 }
 
 .source__p {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: var(--var-medium-p);
     font-weight: bold;
     letter-spacing: .14em;
@@ -156,13 +162,13 @@ nav {
                         border-bottom: 0.3px solid var(--var-light);
                         padding: 15px 0;
                         a {
-                            font-family: 'Barlow Condensed', sans-serif;
+                            font-family: 'Fira Sans Condensed', sans-serif;
                             text-transform: uppercase;
                             padding: 20px 0;
                             margin: 0 10px;
                             letter-spacing: .07em;
                             color: var(--var-black);
-                            font-weight: 500;
+                            font-weight: 400;
                             transition: 0.2s ease-in-out;
                             &:hover {
                                 color: var(--var-light);
@@ -449,17 +455,58 @@ footer {
 }
 
 #blog {
-    background-color: red;
     .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 3% auto;
         .blog__box {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+            padding: 3% 0;
             .prof {
-                background-color: gray;
-                padding: 10px;
-                width: 300px;
+                background-color: var(--var-gray-bg);
+                width: 90%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                &:hover {
+                    .prof__img {
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 20%;
+                        img {
+                            transform: scale(1.3);
+                        }
+                    }
+                }
                 .prof__img {
-                    width: 300px;
+                    border-bottom: 4px solid var(--var-red);
+                    overflow: hidden;
+                    border-radius: 10px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    transition: 0.3s ease-in-out;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.25s ease-in;
+                    }
+                }
+                .prof__text {
+                    padding: 5px 20px;
+                    margin: auto;
+                    .sub__header {
+                        text-transform: none;
+                        line-height: 1em;
+                        padding: 10px 0;
+                    }
+                    .small__p {
+                        color: var(--var-dark);
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }

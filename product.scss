@@ -6,7 +6,7 @@
         text-align: center;
         .card__box {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             height: 100vh;
             padding: 3% 0;
             .card {
