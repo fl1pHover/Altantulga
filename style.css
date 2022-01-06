@@ -212,6 +212,7 @@ nav .nav__content .container .nav__logo img {
 
 #main .container {
   text-align: center;
+  width: 80%;
 }
 
 #main .container .main__header {
@@ -222,8 +223,8 @@ nav .nav__content .container .nav__logo img {
   margin: 50px 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
   grid-column-gap: 40px;
 }
 
@@ -244,29 +245,21 @@ nav .nav__content .container .nav__logo img {
 }
 
 #main .container .main__content .main__text .certified__img img {
-  width: 50%;
+  width: 175px;
+  height: 175px;
 }
 
 #main .container .main__content .main__img {
   width: 100%;
-  height: 80%;
   margin: auto auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
-#main .container .main__content .main__img.img1 {
-  background: url(./img/book1.png) no-repeat;
-  background-size: auto 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center;
-  width: 100%;
-}
-
-#main .container .main__content .main__img.img2 {
-  background: url(./img/book3.jpg) no-repeat;
-  background-size: auto 100%;
-  background-position: center;
-  width: 100%;
+#main .container .main__content .main__img .img1,
+#main .container .main__content .main__img .img2 {
+  width: 300px;
 }
 
 #quotes {
