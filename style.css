@@ -71,6 +71,7 @@ li {
   font-size: var(--var-big-p);
   letter-spacing: 0.01em;
   line-height: 1.4em;
+  text-align: justify;
 }
 
 .medium__p {
@@ -79,6 +80,7 @@ li {
   letter-spacing: .02em;
   line-height: 1.7em;
   color: #949494;
+  text-align: justify;
 }
 
 .small__p {
@@ -86,6 +88,7 @@ li {
   font-weight: 300;
   letter-spacing: .02em;
   color: #949494;
+  text-align: justify;
 }
 
 .source__p {
@@ -220,7 +223,6 @@ nav .nav__content .container .nav__logo img {
 }
 
 #main .container .main__content {
-  margin: 50px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
@@ -231,6 +233,10 @@ nav .nav__content .container .nav__logo img {
 #main .container .main__content .main__text {
   padding: 50px 10px;
   text-align: left;
+}
+
+#main .container .main__content .main__text .big__p {
+  text-align: justify;
 }
 
 #main .container .main__content .main__text .source__p {

@@ -69,6 +69,7 @@ li {
     font-size: var(--var-big-p);
     letter-spacing: 0.01em;
     line-height: 1.4em;
+    text-align: justify;
 }
 
 .medium__p {
@@ -76,18 +77,16 @@ li {
     font-weight: 300;
     letter-spacing: .02em;
     line-height: 1.7em;
-    //     color: var(--var-black-gray);
     color: #949494;
-    ;
+    text-align: justify;
 }
 
 .small__p {
     font-size: var(--var-small-p);
     font-weight: 300;
     letter-spacing: .02em;
-    //     color: var(--var-black-gray);
     color: #949494;
-    ;
+    text-align: justify;
 }
 
 .source__p {
@@ -199,13 +198,15 @@ nav {
             margin: 25px 0;
         }
         .main__content {
-            margin: 50px 0;
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             grid-column-gap: 40px;
             .main__text {
                 padding: 50px 10px;
                 text-align: left;
+                .big__p {
+                    text-align: justify;
+                }
                 .source__p {
                     padding-top: 15px;
                 }
