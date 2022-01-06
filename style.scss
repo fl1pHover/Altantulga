@@ -296,6 +296,30 @@ nav {
                 }
                 .btn {
                     padding-top: 10px;
+                    a {
+                        position: relative;
+                        &.ctn {
+                            font-size: 30px;
+                            &::after {
+                                content: '';
+                                height: 0;
+                                width: 0;
+                            }
+                        }
+                        &:hover {
+                            span {
+                                opacity: 1;
+                                transform: translateX(0px);
+                            }
+                        }
+                        span {
+                            position: absolute;
+                            font-size: var(--var-medium-p);
+                            opacity: 0;
+                            transform: translateX(100px);
+                            transition: .3s ease;
+                        }
+                    }
                 }
             }
             .about__img {
@@ -356,12 +380,15 @@ footer {
                     text-transform: uppercase;
                 }
                 .contact__info {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    display: flex;
                     grid-gap: 100px;
                     justify-content: space-between;
                     margin: 1em 0;
+                    align-items: center;
                     .info {
+                        &:nth-child(1) {
+                            flex: 25%;
+                        }
                         display: flex;
                         i {
                             font-size: 25px;
