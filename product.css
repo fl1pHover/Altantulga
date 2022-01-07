@@ -62,17 +62,16 @@
   width: 250px;
   height: 350px;
   border-radius: 10px;
-  -webkit-box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-          box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  -webkit-box-shadow: rgba(65, 46, 240, 0.4) 5px 5px, rgba(46, 75, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 82, 240, 0.1) 20px 20px, rgba(46, 91, 240, 0.05) 25px 25px;
+          box-shadow: rgba(65, 46, 240, 0.4) 5px 5px, rgba(46, 75, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 82, 240, 0.1) 20px 20px, rgba(46, 91, 240, 0.05) 25px 25px;
 }
 
 #product .container .card__box .card .back {
   background: #f1f1f1;
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg);
-  -webkit-box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-          box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  padding: 20px;
+  -webkit-box-shadow: rgba(65, 46, 240, 0.4) 5px 5px, rgba(46, 75, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 82, 240, 0.1) 20px 20px, rgba(46, 91, 240, 0.05) 25px 25px;
+          box-shadow: rgba(65, 46, 240, 0.4) 5px 5px, rgba(46, 75, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 82, 240, 0.1) 20px 20px, rgba(46, 91, 240, 0.05) 25px 25px;
 }
 
 #product .container .card__box .card .back .back__content {
@@ -85,5 +84,14 @@
   text-transform: none;
   letter-spacing: 2px;
   margin-bottom: 10%;
+}
+
+#product .container .card__box .card .back .back__content {
+  padding: 0 20px;
+}
+
+#product .container .card__box .card .back .back__content h3,
+#product .container .card__box .card .back .back__content p {
+  text-align: center;
 }
 /*# sourceMappingURL=product.css.map */
