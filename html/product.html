@@ -21,39 +21,39 @@
     <nav>
         <div class="nav__content center ">
             <div class="red__line "></div>
-            <div class="container ">
-                <div class="nav__links ">
-                    <ul>
-                        <li>
-                            <a href="index.html " class="nav__btn ">НҮҮР</a>
-                        </li>
-                        <li>
-                            <a href="product.html " class="nav__btn ">БҮТЭЭЛ</a>
-                        </li>
-                        <li>
-                            <!-- <a href=" " class="nav__btn ">ХОЛБОГДОХ</a> -->
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__logo ">
-                    <a href="index.html ">
-                        <img src="/img/logoRed.png " alt="Altantulga Logo ">
-                    </a>
-                </div>
-                <div class="nav__links ">
-                    <ul>
-                        <li>
-                            <a href="#contact" class="nav__btn ">ХОЛБОГДОХ</a>
-                        </li>
-                        <li>
-                            <a href="blog.html " class="nav__btn ">БЛОГ</a>
-                        </li>
-                        <li>
-                            <a href="passion.html " class="nav__btn ">Passion Test</a>
-                        </li>
-                        <div class="toggle"><i class="fas fa-bars"></i>
-                        </div>
-                    </ul>
+            <div class="container menubar">
+                <div class="navbar">
+                    <div class="nav__links">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav__btn">НҮҮР</a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="nav__btn">БҮТЭЭЛ </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img src="/img/logoRed.png" alt="Altantulga Logo">
+                        </a>
+                    </div>
+                    <div class="nav__links">
+                        <ul>
+                            <li>
+                                <a href="#contact" class="nav__btn">ХОЛБОГДОХ</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="nav__btn">БЛОГ</a>
+                            </li>
+                            <li>
+                                <a href="passion.html" class="nav__btn">Passion Test</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,6 +245,12 @@
             </div>
         </section>
     </footer>
+    <script>
+        let menutoggle = document.querySelector(".menubar");
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle("active");
+        };
+    </script>
 </body>
 
 </html>

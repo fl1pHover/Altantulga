@@ -38,6 +38,7 @@ body {
     background-color: var(--var-bg);
     color: var(--var-black-gray);
     max-width: 100vw;
+    position: relative;
 }
 
 .container {
@@ -161,7 +162,6 @@ nav {
         }
         .container {
             padding: 30px 0;
-            position: relative;
             .navbar {
                 display: flex;
                 justify-content: space-between;
@@ -191,8 +191,8 @@ nav {
                 }
                 .nav__logo {
                     position: absolute;
-                    transform: translate(-50%, -50%);
-                    top: 50%;
+                    transform: translate(-50%, 0%);
+                    top: 25px;
                     left: 50%;
                     img {
                         width: 100px;
@@ -511,6 +511,7 @@ footer {
 }
 
 #passion {
+    margin-top: 40px;
     padding-bottom: 3%;
     .container {
         .passion__content {
@@ -518,6 +519,9 @@ footer {
             flex-direction: column;
             .passion__img {
                 margin: auto;
+                img {
+                    width: 200px;
+                }
             }
             .passion__text {
                 margin-bottom: 20px;
@@ -530,6 +534,7 @@ footer {
 }
 
 #blog {
+    margin-top: 70px;
     .container {
         display: flex;
         flex-direction: column;
