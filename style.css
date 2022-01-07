@@ -24,15 +24,22 @@
   --var-small-p: 12px;
 }
 
+.toggle {
+  visibility: none;
+  font-size: 0;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-transition-duration: 3000ms;
           transition-duration: 3000ms;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--var-bg);
   color: var(--var-black-gray);
+  max-width: 100vw;
 }
 
 .container {
@@ -146,12 +153,18 @@ a.nav__btn ul {
   display: block;
 }
 
+.toggle {
+  color: var(--var-red);
+  font-size: 32px;
+  visibility: hidden;
+}
+
 nav {
   overflow: hidden;
 }
 
 nav .nav__content .red__line {
-  background: url(./img/red-line.png) repeat;
+  background: url(/img/red-line.png) repeat;
   background-position: left;
   width: 100vw;
   height: 20px;
@@ -159,6 +172,11 @@ nav .nav__content .red__line {
 }
 
 nav .nav__content .container {
+  padding: 30px 0;
+  position: relative;
+}
+
+nav .nav__content .container .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,23 +186,21 @@ nav .nav__content .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
-  position: relative;
 }
 
-nav .nav__content .container .nav__links ul {
+nav .nav__content .container .navbar .nav__links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav .nav__content .container .nav__links ul li {
+nav .nav__content .container .navbar .nav__links ul li {
   border-top: 0.3px solid var(--var-light);
   border-bottom: 0.3px solid var(--var-light);
   padding: 15px 0;
 }
 
-nav .nav__content .container .nav__links ul li a {
+nav .nav__content .container .navbar .nav__links ul li a {
   font-family: 'Fira Sans Condensed', sans-serif;
   text-transform: uppercase;
   padding: 20px 0;
@@ -196,11 +212,11 @@ nav .nav__content .container .nav__links ul li a {
   transition: 0.2s ease-in-out;
 }
 
-nav .nav__content .container .nav__links ul li a:hover {
+nav .nav__content .container .navbar .nav__links ul li a:hover {
   color: var(--var-light);
 }
 
-nav .nav__content .container .nav__logo {
+nav .nav__content .container .navbar .nav__logo {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -208,7 +224,7 @@ nav .nav__content .container .nav__logo {
   left: 50%;
 }
 
-nav .nav__content .container .nav__logo img {
+nav .nav__content .container .navbar .nav__logo img {
   width: 100px;
   padding: 1px;
 }
@@ -341,9 +357,6 @@ nav .nav__content .container .nav__logo img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  grid-column-gap: 40px;
   padding: 60px 0;
 }
 
@@ -394,12 +407,12 @@ nav .nav__content .container .nav__logo img {
 }
 
 #about .container .about__content .about__img {
-  background: url(./img/portrait.jpg);
+  background: url(/img/altantulga.jpg) no-repeat;
   background-position: center;
   width: 350px;
   height: 520px;
   background-size: auto 100%;
-  margin: auto;
+  margin: auto 30px auto 30px;
 }
 
 #about .container .about__content .about__img img {
@@ -704,6 +717,7 @@ footer #footer .container .footer__content .copy__right {
 #blog .container .blog__box .prof .prof__text {
   padding: 5px 20px;
   margin: auto;
+  height: 100px;
 }
 
 #blog .container .blog__box .prof .prof__text .sub__header {

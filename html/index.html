@@ -10,6 +10,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media.css">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -19,41 +20,48 @@
     <nav>
         <div class="nav__content center">
             <div class="red__line"></div>
-            <div class="container">
-                <div class="nav__links">
-                    <ul>
-                        <li>
-                            <a href="index.html" class="nav__btn">НҮҮР</a>
-                        </li>
-                        <li>
-                            <a href="product.html" class="nav__btn">БҮТЭЭЛ </a>
-                        </li>
-                        <li>
-                            <!-- <a href="" class="nav__btn">ХОЛБОГДОХ</a> -->
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__logo">
-                    <a href="index.html">
-                        <img src="./img/logoRed.png" alt="Altantulga Logo">
-                    </a>
-                </div>
-                <div class="nav__links">
-                    <ul>
-                        <li>
-                            <a href="#contact" class="nav__btn">ХОЛБОГДОХ</a>
-                        </li>
-                        <li>
-                            <a href="blog.html" class="nav__btn">БЛОГ</a>
-                        </li>
-                        <li>
-                            <a href="passion.html" class="nav__btn">Passion Test</a>
-                        </li>
-                    </ul>
+
+            <div class="container menubar">
+                <div class="navbar">
+                    <div class="nav__links">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav__btn">НҮҮР</a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="nav__btn">БҮТЭЭЛ </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img src="/img/logoRed.png" alt="Altantulga Logo">
+                        </a>
+                    </div>
+                    <div class="nav__links">
+                        <ul>
+                            <li>
+                                <a href="#contact" class="nav__btn">ХОЛБОГДОХ</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="nav__btn">БЛОГ</a>
+                            </li>
+                            <li>
+                                <a href="passion.html" class="nav__btn">Passion Test</a>
+                            </li>
+                            <div class="toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
+
     </nav>
+
     <section id="main">
         <div class="container">
             <h1 class="main__header">
@@ -64,7 +72,7 @@
             </h3>
             <div class="main__content">
                 <div class="main__img ">
-                    <img src="./img/book1.png " class="img1" alt="">
+                    <img src="/img/book1.png " class="img1" alt="">
                 </div>
                 <div class="main__text">
                     <p class="big__p">
@@ -75,12 +83,12 @@
                     </p>
                     <p class="source__p">— АЛТАНТУЛГА </p>
                     <div class="certified__img">
-                        <img src="./img/certification.png" alt="club">
+                        <img src="/img/certification.png" alt="club">
                     </div>
 
                 </div>
                 <div class="main__img ">
-                    <img src="./img/book3.jpg" class="img2" alt="">
+                    <img src="/img/book3.jpg" class="img2" alt="">
                 </div>
             </div>
         </div>
@@ -136,7 +144,7 @@
     <section id="quotes">
         <div class="container">
             <div class="quote__img">
-                <img src="./img/passionTest.png" alt="">
+                <img src="/img/passionTest.png" alt="">
             </div>
             <div class="quotes__content">
                 <div class="quote">
@@ -247,6 +255,14 @@
         </section>
     </footer>
     <script src="/scroll.js"></script>
+    <script>
+        let menutoggle = document.querySelector(".menubar");
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle("active");
+        };
+    </script>
+
+
 </body>
 
 </html>
