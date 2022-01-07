@@ -25,7 +25,7 @@
 }
 
 .toggle {
-  visibility: none;
+  visibility: hidden;
   font-size: 0;
 }
 

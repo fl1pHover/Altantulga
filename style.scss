@@ -7,7 +7,7 @@
     font-family: sans-serif;
 }
 
- :root {
+:root {
     --var-bg: #fff;
     --var-gray-bg: #edeae7;
     --var-dark-gray: rgba(23, 23, 23, 0.8);
@@ -24,7 +24,7 @@
 }
 
 .toggle {
-    visibility: none;
+    visibility: hidden;
     font-size: 0;
 }
 

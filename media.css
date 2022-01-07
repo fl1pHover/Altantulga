@@ -124,7 +124,7 @@
 }
 
 .toggle {
-  visibility: visible;
+  visibility: hidden;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -139,6 +139,12 @@
     --var-big-p: 20px !important;
     --var-medium-p: 14px !important;
     --var-small-p: 10px;
+  }
+  .toggle {
+    visibility: visible;
+    position: absolute;
+    right: 10px;
+    top: 30px;
   }
   .container {
     width: 680px !important;
@@ -172,12 +178,6 @@
     border-top: none;
     text-align: center;
     margin-top: 40px;
-  }
-  .container.active .navbar .nav__links .toggle {
-    visibility: visible;
-    position: absolute;
-    right: 10px;
-    top: 30px;
   }
   .container.active .navbar .nav__logo {
     position: absolute !important;
