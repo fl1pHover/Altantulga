@@ -407,6 +407,7 @@ footer {
                     grid-gap: 100px;
                     justify-content: space-between;
                     margin: 1em 0;
+                    margin-top: 30px;
                     align-items: center;
                     .info {
                         &:nth-child(1) {
@@ -541,8 +542,10 @@ footer {
 #deal {
     margin-bottom: 50px;
     .main__header {
+        font-family: 'Fira Sans Condensed', sans-serif;
+        color: var(--var-red);
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 5%;
         text-transform: uppercase;
     }
     .container {

@@ -211,6 +211,9 @@
     .nav__links {
         display: none;
         transform: translate(2000px, 2000px);
+        a {
+            font-size: 40px;
+        }
     }
     #main {
         margin-top: 30px;
